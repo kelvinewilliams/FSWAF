@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Resources:
+  dev.k77.fluentstream.WAFFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Runtime: java8
+      Handler: dev.k77.fluentstream.dev.k77.fluentstream.WAF::handleRequest
+      Timeout: 60
+      CodeUri: ./target/lambda.jar

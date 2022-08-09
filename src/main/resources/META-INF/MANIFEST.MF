@@ -1,0 +1,1 @@
+Main-Class: dev.k77.fluentstream.WAF.IPListUpdater
